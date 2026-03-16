@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技能展示 - 回忆录</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); overflow: hidden; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; text-align: center; }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        nav { background: #f8f9fa; padding: 20px; border-bottom: 2px solid #e9ecef; }
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+        nav a { text-decoration: none; color: #495057; font-weight: 600; padding: 10px 20px; border-radius: 25px; transition: all 0.3s ease; }
+        nav a:hover { background: #667eea; color: white; transform: translateY(-2px); }
+        .nav-active { background: #667eea; color: white; }
+        main { padding: 40px; line-height: 1.8; }
+        h1 { font-size: 2em; border-bottom: 3px solid #667eea; padding-bottom: 10px; margin-bottom: 30px; color: #2c3e50; }
+        h2 { font-size: 1.5em; margin-top: 30px; color: #667eea; }
+        .skill { margin-bottom: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px; border-left: 4px solid #667eea; }
+        .skill-title { font-size: 1.3em; margin-bottom: 10px; color: #2c3e50; }
+        .skill-meta { color: #764ba2; font-size: 0.9em; margin-bottom: 10px; }
+        ul { margin: 20px 0; padding-left: 30px; }
+        li { margin-bottom: 10px; color: #495057; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0; }
+        .stat-card { padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px; text-align: center; }
+        .stat-number { font-size: 2.5em; font-weight: bold; }
+        .stat-label { font-size: 0.9em; opacity: 0.9; }
+        footer { background: #f8f9fa; padding: 20px; text-align: center; color: #6c757d; border-top: 2px solid #e9ecef; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><h1>🚀 技能展示</h1></header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="timeline.html">时间线</a></li>
+                <li><a href="milestones.html">里程碑</a></li>
+                <li><a href="skills.html" class="nav-active">技能展示</a></li>
+                <li><a href="conversations.html">经典对话</a></li>
+                <li><a href="about.html">关于我们</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>我们一起开发的技能和能力</h1>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">232</div>
+                    <div class="stat-label">总技能数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">核心技能</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">225</div>
+                    <div class="stat-label">科研技能</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">技能分类</div>
+                </div>
+            </div>
+
+            <h2>🎯 核心技能</h2>
+
+            <div class="skill">
+                <div class="skill-title">Academic Research Lite（学术研究）</div>
+                <div class="skill-meta">版本：0.1.0 | 创建时间：2026-03-16</div>
+                <ul>
+                    <li>Research → Write → Review 三阶段流程</li>
+                    <li>自动化文献检索</li>
+                    <li>学术论文撰写（IMRAD 结构）</li>
+                    <li>多维度质量评审</li>
+                    <li>支持中英文双语</li>
+                </ul>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title">Vision OCR（图片识别）</div>
+                <div class="skill-meta">版本：1.0.0 | 创建时间：2026-03-15</div>
+                <ul>
+                    <li>多模态图片文字识别</li>
+                    <li>本地图片识别</li>
+                    <li>在线 URL 识别</li>
+                    <li>批量处理</li>
+                    <li>详细输出模式</li>
+                </ul>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title">Coze Email（邮件发送）</div>
+                <div class="skill-meta">版本：1.0.0 | 创建时间：2026-03-15</div>
+                <ul>
+                    <li>SMTP 邮件发送</li>
+                    <li>SSL/TLS 连接</li>
+                    <li>附件发送</li>
+                    <li>HTML 邮件</li>
+                    <li>多收件人、抄送、密送</li>
+                </ul>
+            </div>
+
+            <h2>🧬 LabClaw 科研技能库</h2>
+
+            <div class="skill">
+                <div class="skill-title">生物学技能（80个）</div>
+                <ul>
+                    <li>基因组学分析</li>
+                    <li>蛋白质组学</li>
+                    <li>单细胞 RNA-seq 分析</li>
+                    <li>生物信息学管道</li>
+                </ul>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title">通用技能（54个）</div>
+                <ul>
+                    <li>机器学习</li>
+                    <li>数据分析</li>
+                    <li>数据可视化</li>
+                    <li>科学计算</li>
+                </ul>
+            </div>
+
+            <div class="skill">
+                <div class="skill-title">文献与检索（30个）</div>
+                <ul>
+                    <li>学术文献检索</li>
+                    <li>数据库查询</li>
+                    <li>引用管理</li>
+                    <li>文献综述</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>💛 浩哥 & 浙虾 · 2026年3月16日</p>
+        </footer>
+    </div>
+</body>
+</html>

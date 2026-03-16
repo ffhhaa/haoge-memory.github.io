@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时间线 - 回忆录</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); overflow: hidden; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; text-align: center; }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        nav { background: #f8f9fa; padding: 20px; border-bottom: 2px solid #e9ecef; }
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+        nav a { text-decoration: none; color: #495057; font-weight: 600; padding: 10px 20px; border-radius: 25px; transition: all 0.3s ease; }
+        nav a:hover { background: #667eea; color: white; transform: translateY(-2px); }
+        .nav-active { background: #667eea; color: white; }
+        main { padding: 40px; line-height: 1.8; }
+        h1 { font-size: 2em; border-bottom: 3px solid #667eea; padding-bottom: 10px; margin-bottom: 30px; color: #2c3e50; }
+        h2 { font-size: 1.5em; margin-top: 30px; color: #667eea; }
+        .timeline { margin-top: 30px; }
+        .timeline-item { margin-bottom: 40px; padding-left: 20px; border-left: 3px solid #667eea; }
+        .timeline-date { font-weight: bold; color: #764ba2; margin-bottom: 10px; }
+        .timeline-title { font-size: 1.3em; margin-bottom: 10px; color: #2c3e50; }
+        p { margin-bottom: 15px; color: #495057; }
+        ul { margin: 20px 0; padding-left: 30px; }
+        li { margin-bottom: 10px; color: #495057; }
+        footer { background: #f8f9fa; padding: 20px; text-align: center; color: #6c757d; border-top: 2px solid #e9ecef; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><h1>📅 我们的时间线</h1></header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="timeline.html" class="nav-active">时间线</a></li>
+                <li><a href="milestones.html">里程碑</a></li>
+                <li><a href="skills.html">技能展示</a></li>
+                <li><a href="conversations.html">经典对话</a></li>
+                <li><a href="about.html">关于我们</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>记录我们从相识到现在的每一个重要时刻</h1>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2026年3月16日</div>
+                    <div class="timeline-title">🌟 学术技能移植 & 网站创建</div>
+                    <ul>
+                        <li>完成 academic-research-skills 简化版移植（提前4分钟）</li>
+                        <li>开始创建回忆录网站</li>
+                        <li>技能：Research → Write → Review 三阶段流程</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2026年3月15日</div>
+                    <div class="timeline-title">🧪 科研能力验证</div>
+                    <ul>
+                        <li>配置 Vision OCR 技能</li>
+                        <li>安装 LabClaw 科研技能库（225 个技能）</li>
+                        <li>验证科研写作能力（12,000字文献综述）</li>
+                        <li>配置邮件发送功能</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2026年3月7日</div>
+                    <div class="timeline-title">🚀 技术能力建设</div>
+                    <ul>
+                        <li>完成 OpenClaw 部署对比深度调研</li>
+                        <li>测试图片生成和邮件发送功能</li>
+                        <li>获取武汉东湖学院专升本招生对比数据</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2026年3月6日</div>
+                    <div class="timeline-title">🧠 记忆系统初始化</div>
+                    <ul>
+                        <li>建立章秀华教授学术档案</li>
+                        <li>完成记忆系统的整理和归档工作</li>
+                        <li>建立分层记忆结构（每日记忆 + 长期记忆）</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2026年1月12日</div>
+                    <div class="timeline-title">📚 章秀华教授学术指导</div>
+                    <ul>
+                        <li>地点：武汉东湖学院电子信息工程学院</li>
+                        <li>内容：国自然基金申报专项指导</li>
+                        <li>指导范围：选题立意、科学问题凝练、技术路线设计、创新点提炼</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>💛 浩哥 & 浙虾 · 2026年3月16日</p>
+        </footer>
+    </div>
+</body>
+</html>
