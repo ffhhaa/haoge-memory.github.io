@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天气测试 - 测试虾</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+        }
+        .weather-card {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+            margin: 20px 0;
+        }
+        .weather-main {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .weather-desc {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .weather-details {
+            margin-top: 15px;
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .timestamp {
+            margin-top: 30px;
+            color: #aaa;
+            font-size: 0.9em;
+        }
+        .tag {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tag">🧪 测试页面</div>
+        <h1>🌤️ 武汉天气</h1>
+        <p class="subtitle">自动抓取测试数据</p>
+
+        <div class="weather-card">
+            <div class="weather-desc">Light rain, mist</div>
+            <div class="weather-main">+10°C</div>
+            <div class="weather-details">
+                💧 湿度: 100%<br>
+                💨 风向: ↙ 8km/h
+            </div>
+        </div>
+
+        <p class="timestamp">
+            更新时间: 2026-03-17 08:59 GMT+8<br>
+            <small>此页面为测试用途，将自动清理</small>
+        </p>
+    </div>
+</body>
+</html>
